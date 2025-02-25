@@ -1,0 +1,6 @@
+@PrsNetWeb_HostAddress = http://localhost:5184
+
+GET {{PrsNetWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
