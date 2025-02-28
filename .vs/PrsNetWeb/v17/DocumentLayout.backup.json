@@ -22,20 +22,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 196,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\UserLogin.cs",
               "RelativeDocumentMoniker": "Models\\UserLogin.cs",
-              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\UserLogin.cs*",
-              "RelativeToolTip": "Models\\UserLogin.cs*",
+              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\UserLogin.cs",
+              "RelativeToolTip": "Models\\UserLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T23:07:51.97Z",
@@ -47,9 +43,9 @@
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\UsersController.cs*",
-              "RelativeToolTip": "Controllers\\UsersController.cs*",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAQwHAAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAQwHAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T23:06:23.193Z",
               "EditorCaption": ""
