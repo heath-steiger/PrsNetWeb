@@ -98,6 +98,19 @@ namespace PrsNetWeb.Controllers
 
             return NoContent();
         }
+        // POST : ap/User/login
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> Login(UserLogin userLogin)
+        {
+            var user = await _context.Users
+                 .FirstOrDefaultAsync(u => u.Username == userLogin.Username && u.Password == userLogin.Password);
+
+            if (user == null) {
+                return NotFound();
+            }
+
+            return user;
+        }
 
         private bool UserExists(int id)
         {

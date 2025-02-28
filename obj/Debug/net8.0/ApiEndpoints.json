@@ -436,6 +436,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PrsNetWeb.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "PrsNetWeb.Models.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PrsNetWeb.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PrsNetWeb.Controllers.VendorsController",
     "Method": "GetVendors",
     "RelativePath": "api/Vendors",
