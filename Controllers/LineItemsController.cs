@@ -59,6 +59,7 @@ namespace PrsNetWeb.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                RecalculateCollectionValue(lineItem.RequestId);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -82,7 +83,7 @@ namespace PrsNetWeb.Controllers
         {
             _context.LineItems.Add(lineItem);
             await _context.SaveChangesAsync();
-
+            RecalculateCollectionValue(lineItem.RequestId);
             return CreatedAtAction("GetLineItem", new { id = lineItem.Id }, lineItem);
         }
 
@@ -98,11 +99,43 @@ namespace PrsNetWeb.Controllers
 
             _context.LineItems.Remove(lineItem);
             await _context.SaveChangesAsync();
-
+            RecalculateCollectionValue(lineItem.RequestId);
             return NoContent();
         }
+        // GET: api/LineItems/Lines-for-req5
+        [HttpGet("lines-for-req/{id}")]
+        public async Task<ActionResult<List<LineItem>>> GetLineItemByRequestID(int id)
+        {
+            var lineItem = await _context.LineItems.Where(l => l.RequestId == id)
+                                                   .ToListAsync();
+            if (lineItem == null) {
+                return NotFound();
+            }
 
-        private bool LineItemExists(int id)
+            return lineItem;
+            //lineitems for request
+        }
+        private void RecalculateCollectionValue(int reqId)
+        {
+        
+            var request = _context.Requests.Find(reqId);
+          
+            var l = _context.LineItems.Include(l => l.Product)
+                                      .Include(l => l.Request)
+                                      .Where(li => li.RequestId == reqId);
+            
+          
+            
+            decimal sum = 0;
+            foreach (LineItem li in l) {
+                sum += li.Quantity * li.Product.Price;
+            }
+            request.Total = sum;
+           
+            _context.SaveChanges();
+        }
+
+            private bool LineItemExists(int id)
         {
             return _context.LineItems.Any(e => e.Id == id);
         }

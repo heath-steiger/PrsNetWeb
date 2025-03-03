@@ -83,6 +83,11 @@ namespace PrsNetWeb.Controllers
         [HttpPost]
         public async Task<ActionResult<Request>> PostRequest(Request request)
         {
+            
+            request.RequestNumber = GetRequestNumber();
+            request.Status = "NEW";
+            request.Total = 0.0m;
+            request.SubmittedDate = DateTime.Now;
             _context.Requests.Add(request);
             await _context.SaveChangesAsync();
 
@@ -103,6 +108,124 @@ namespace PrsNetWeb.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private string GetRequestNumber() {
+            string requestNbr = "R";
+            // add YYMMDD string
+            DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+            requestNbr += today.ToString("yyMMdd");
+            // get maximum request number from db
+            string maxReqNbr = _context.Requests.Max(r => r.RequestNumber);
+            String reqNbr = "";
+            if (maxReqNbr != null) {
+                // get last 4 characters, convert to number
+                String tempNbr = maxReqNbr.Substring(7);
+                int nbr = Int32.Parse(tempNbr);
+                nbr++;
+                // pad w/ leading zeros
+                reqNbr += nbr;
+                reqNbr = reqNbr.PadLeft(4, '0');
+            }
+            else {
+                reqNbr = "0001";
+            }
+            requestNbr += reqNbr;
+            return requestNbr;
+
+        }
+    
+      
+     
+        // GET: api/Requests/submit-review/id
+        [HttpPut("submit-review/{id}")]
+        public async Task<IActionResult> PutRequestForReview(int id, Request request)
+        {
+            request.Status = "REVIEW";
+            if (id != request.Id) {
+                return BadRequest();
+            }
+
+            _context.Entry(request).State = EntityState.Modified;
+            try {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException) {
+                if (!RequestExists(id)) {
+                    return NotFound();
+                }
+                else {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+        // GET: api/Requests/approve/id
+        [HttpPut("approve/{id}")]
+        public async Task<IActionResult> PutRequestForApproved(int id, Request request)
+        {
+            request.Status = "APPOVED";
+            if (id != request.Id) {
+                return BadRequest();
+            }
+
+            _context.Entry(request).State = EntityState.Modified;
+            try {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException) {
+                if (!RequestExists(id)) {
+                    return NotFound();
+                }
+                else {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // GET: api/Requests/approve/id
+        [HttpPut("reject/{id}")]
+        public async Task<IActionResult> PutRequestForRejected(int id, Request request)
+        {
+            if (id != request.Id) {
+                return BadRequest();
+            }
+           
+                request.Status = "REJECTED";
+            
+            _context.Entry(request).State = EntityState.Modified;
+            try {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException) {
+                if (!RequestExists(id)) {
+                    return NotFound();
+                }
+                else {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // GET: api/Requests/list-review/id
+        [HttpGet("list-review/{id}")]
+        public async Task<ActionResult<List<Request>>> GetRequestsForReview(int id)
+        {
+            
+            
+            var request = await _context.Requests.Where(r => r.Status == "REVIEW" && r.UserId != id)
+                                                 .ToListAsync();
+            if (request == null) {
+                return NotFound();
+            }
+
+            return request;
+     
         }
 
         private bool RequestExists(int id)
