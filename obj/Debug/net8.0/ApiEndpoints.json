@@ -364,11 +364,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "PrsNetWeb.Models.Request",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -411,11 +406,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "PrsNetWeb.Models.Request",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -431,11 +421,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "PrsNetWeb.Models.Request",
         "IsRequired": true
       }
     ],

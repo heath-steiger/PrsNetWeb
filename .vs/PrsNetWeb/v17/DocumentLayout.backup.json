@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\controllers\\lineitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:controllers\\lineitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:controllers\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|c:\\repos\\c-sharp-repos\\prsnetweb\\controllers\\lineitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282E4D16-4DF7-410E-AB46-04B5113C6FB8}|PrsNetWeb.csproj|solutionrelative:controllers\\lineitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,32 +43,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RequestDTO.cs",
+              "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\RequestDTO.cs",
+              "RelativeDocumentMoniker": "Models\\RequestDTO.cs",
+              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\RequestDTO.cs",
+              "RelativeToolTip": "Models\\RequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:38:58.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestsController.cs",
+              "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\RequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RequestsController.cs",
+              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\RequestsController.cs",
+              "RelativeToolTip": "Controllers\\RequestsController.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAowM8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T14:20:54.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T21:23:38.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "LineItemsController.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\LineItemsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LineItemsController.cs",
-              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\LineItemsController.cs*",
-              "RelativeToolTip": "Controllers\\LineItemsController.cs*",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAIwIYAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\LineItemsController.cs",
+              "RelativeToolTip": "Controllers\\LineItemsController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv1kAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T16:45:10.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LineItem.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\LineItem.cs",
               "RelativeDocumentMoniker": "Models\\LineItem.cs",
@@ -77,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Models\\Request.cs",
               "RelativeDocumentMoniker": "Models\\Request.cs",
@@ -86,19 +116,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T14:46:19.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RequestsController.cs",
-              "DocumentMoniker": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\RequestsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RequestsController.cs",
-              "ToolTip": "C:\\Repos\\c-sharp-repos\\PrsNetWeb\\Controllers\\RequestsController.cs",
-              "RelativeToolTip": "Controllers\\RequestsController.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAAAM8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T14:20:54.792Z",
               "EditorCaption": ""
             }
           ]

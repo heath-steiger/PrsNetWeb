@@ -139,12 +139,14 @@ namespace PrsNetWeb.Controllers
      
         // GET: api/Requests/submit-review/id
         [HttpPut("submit-review/{id}")]
-        public async Task<IActionResult> PutRequestForReview(int id, Request request)
+        public async Task<IActionResult> PutRequestForReview(int id)
         {
-            request.Status = "REVIEW";
-            if (id != request.Id) {
-                return BadRequest();
+            var request = await _context.Requests.FindAsync(id);
+            if (request == null) {
+                return NotFound();
             }
+
+            request.Status = "REVIEW";
 
             _context.Entry(request).State = EntityState.Modified;
             try {
@@ -159,16 +161,17 @@ namespace PrsNetWeb.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(request);
         }
         // GET: api/Requests/approve/id
         [HttpPut("approve/{id}")]
-        public async Task<IActionResult> PutRequestForApproved(int id, Request request)
+        public async Task<IActionResult> PutRequestForApproved(int id)
         {
-            request.Status = "APPOVED";
-            if (id != request.Id) {
-                return BadRequest();
+            var request = await _context.Requests.FindAsync(id);
+            if (request == null) {
+                return NotFound();
             }
+            request.Status = "APPOVED";
 
             _context.Entry(request).State = EntityState.Modified;
             try {
@@ -188,13 +191,16 @@ namespace PrsNetWeb.Controllers
 
         // GET: api/Requests/approve/id
         [HttpPut("reject/{id}")]
-        public async Task<IActionResult> PutRequestForRejected(int id, Request request)
+        public async Task<IActionResult> PutRequestForRejected(int id)
         {
-            if (id != request.Id) {
-                return BadRequest();
+            //if (id != request.Id) {
+            //    return BadRequest();
+            //}
+            var request = await _context.Requests.FindAsync(id);
+            if (request == null) {
+                return NotFound();
             }
-           
-                request.Status = "REJECTED";
+            request.Status = "REJECTED";
             
             _context.Entry(request).State = EntityState.Modified;
             try {
@@ -209,8 +215,11 @@ namespace PrsNetWeb.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(request);
         }
+
+
+
 
         // GET: api/Requests/list-review/id
         [HttpGet("list-review/{id}")]
